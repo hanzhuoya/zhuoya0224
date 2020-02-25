@@ -8,7 +8,7 @@
         <version>2.2.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>io.cjf</groupId>
+    <groupId>io.hzy</groupId>
     <artifactId>jcart-administration-back</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>jcart-administration-back</name>

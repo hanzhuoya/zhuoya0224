@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/jcart-administration-back.iml" filepath="$PROJECT_DIR$/.idea/jcart-administration-back.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jcart-administration-back.iml" filepath="$PROJECT_DIR$/jcart-administration-back.iml" />
     </modules>
   </component>
 </project>

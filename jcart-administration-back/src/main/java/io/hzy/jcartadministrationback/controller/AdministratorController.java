@@ -1,10 +1,9 @@
 package io.hzy.jcartadministrationback.controller;
 
-import io.hzy.jcartadministrationback.dto.in.AdministratorLoginDTO;
-import io.hzy.jcartadministrationback.dto.in.AdministratorResetPwdInDTO;
-import io.hzy.jcartadministrationback.dto.in.AdministratorUpdateProfileInDTO;
+import io.hzy.jcartadministrationback.dto.in.*;
 import io.hzy.jcartadministrationback.dto.out.AdministratorGetProfileOutDTO;
 import io.hzy.jcartadministrationback.dto.out.AdministratorListOutDTO;
+import io.hzy.jcartadministrationback.dto.out.AdministratorShowOutDTO;
 import io.hzy.jcartadministrationback.dto.out.PageOutDTO;
 import org.springframework.web.bind.annotation.*;
 
@@ -40,5 +39,21 @@ public class AdministratorController {
     @GetMapping("/getList")
     public PageOutDTO<AdministratorListOutDTO> getList(@RequestParam Integer pageNum){
       return null;
+    }
+
+
+    @GetMapping("/getById")
+    public AdministratorShowOutDTO getById(@RequestParam Integer administratorId){
+        return null;
+    }
+
+    @GetMapping("/create")
+    public Integer create(@RequestBody AdministratorCreateInDTO administratorCreateInDTO){
+     return null;
+    }
+
+    @PostMapping("/update")
+    public void update(@RequestBody AdministratorUpdateInDTO administratorUpdateInDTO){
+
     }
 }

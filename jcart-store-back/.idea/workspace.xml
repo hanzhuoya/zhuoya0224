@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="26fb8693-43f1-4178-8e08-8a4991f45ccd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/AddressController.java" afterDir="false" />
+    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\hzy\zhuoya0224\jcart-store-back\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1YFkRd5xFzukXGakAhFNyY86tVN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -46,46 +25,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="JcartStoreBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="jcart-store-back" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.cjf.jcartstoreback.JcartStoreBackApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="26fb8693-43f1-4178-8e08-8a4991f45ccd" name="Default Changelist" comment="" />
-      <created>1582545722665</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1582545722665</updated>
-      <workItem from="1582545738728" duration="962000" />
-      <workItem from="1582687128278" duration="56000" />
-      <workItem from="1582687187068" duration="76000" />
-      <workItem from="1582687265736" duration="5599000" />
-    </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

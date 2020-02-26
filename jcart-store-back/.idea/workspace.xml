@@ -2,6 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26fb8693-43f1-4178-8e08-8a4991f45ccd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/AddressController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/AddressCreateInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/AddressUpdateInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/CustomerChangePwdInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/CustomerLoginInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/CustomerRegisterInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/CustomerResetPwdInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/CustomerUpdateProfileInDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/out/AddressListOutDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/out/CustomerGetProfileOutDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -9,6 +20,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -61,6 +79,7 @@
       <workItem from="1582545738728" duration="962000" />
       <workItem from="1582687128278" duration="56000" />
       <workItem from="1582687187068" duration="76000" />
+      <workItem from="1582687265736" duration="5288000" />
     </task>
     <servers />
   </component>

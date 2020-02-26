@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26fb8693-43f1-4178-8e08-8a4991f45ccd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/AddressController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +68,7 @@
       <workItem from="1582545738728" duration="962000" />
       <workItem from="1582687128278" duration="56000" />
       <workItem from="1582687187068" duration="76000" />
-      <workItem from="1582687265736" duration="5564000" />
+      <workItem from="1582687265736" duration="5599000" />
     </task>
     <servers />
   </component>

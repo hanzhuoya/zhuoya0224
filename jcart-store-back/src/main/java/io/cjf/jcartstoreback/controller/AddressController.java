@@ -22,5 +22,10 @@ public class AddressController {
         return null;
     }
 
+    @PostMapping("/update")
+    public void update(@RequestBody AddressUpdateInDTO addressUpdateInDTO,
+                       @RequestAttribute Integer customerId){
+
+    }
 
 }

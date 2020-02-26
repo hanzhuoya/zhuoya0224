@@ -39,6 +39,15 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="JcartStoreBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jcart-store-back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.cjf.jcartstoreback.JcartStoreBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -50,6 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582545722665</updated>
       <workItem from="1582545738728" duration="962000" />
+      <workItem from="1582687128278" duration="56000" />
+      <workItem from="1582687187068" duration="76000" />
     </task>
     <servers />
   </component>
@@ -61,7 +72,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

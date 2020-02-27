@@ -1,6 +1,6 @@
 package io.hzy.jcartadministrationback.dao;
 
-import io.cjf.jcartadministrationback.po.ProductDetail;
+import io.hzy.jcartadministrationback.po.ProductDetail;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

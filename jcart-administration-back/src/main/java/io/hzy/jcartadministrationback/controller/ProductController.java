@@ -8,6 +8,8 @@ import io.hzy.jcartadministrationback.dto.out.ProductListOutDTO;
 import io.hzy.jcartadministrationback.dto.out.ProductShowOutDTO;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/product")
 public class ProductController {
@@ -32,4 +34,6 @@ public class ProductController {
     public void update(@RequestBody ProductUpdateInDTO productUpdateInDTO){
 
     }
+
+
 }

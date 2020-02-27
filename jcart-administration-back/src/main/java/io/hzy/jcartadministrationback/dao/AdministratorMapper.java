@@ -1,6 +1,7 @@
 package io.hzy.jcartadministrationback.dao;
 
-import io.cjf.jcartadministrationback.po.Administrator;
+
+import io.hzy.jcartadministrationback.po.Administrator;
 
 public interface AdministratorMapper {
     int deleteByPrimaryKey(Integer administratorId);

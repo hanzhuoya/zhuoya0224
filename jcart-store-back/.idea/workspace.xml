@@ -1,33 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AddressMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AdministratorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ProductDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ProductMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ReturnHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ReturnMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/AddressMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/AdministratorMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderDetailMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ProductDetailMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ProductMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ReturnHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ReturnMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582765668555</updated>
-      <workItem from="1582765669821" duration="1169000" />
+      <workItem from="1582765669821" duration="1391000" />
     </task>
     <servers />
   </component>

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="" />
+    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +18,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -56,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582765668555</updated>
       <workItem from="1582765669821" duration="1391000" />
+      <workItem from="1582785730355" duration="8000" />
     </task>
     <servers />
   </component>
@@ -67,7 +70,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

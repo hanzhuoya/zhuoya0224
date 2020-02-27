@@ -64,6 +64,11 @@
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <version>1.4.0</version>
             </plugin>
+            <plugin>
+                <groupId></groupId>
+            </plugin>
+
+
         </plugins>
 
     </build>

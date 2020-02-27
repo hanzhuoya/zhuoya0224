@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AddressMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AdministratorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ProductDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ProductMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ReturnHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/ReturnMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/AddressMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/AdministratorMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ProductDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ProductMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ReturnHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/io/cjf/jcartstoreback/dao/ReturnMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jcart-administration-back/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +37,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProjectId" id="1YMwFcGBlY8jtZpXXPGkctZAkEN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\resources" />
+      <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -25,10 +62,41 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="JcartStoreBackApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="jcart-store-back" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.cjf.jcartstoreback.JcartStoreBackApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="" />
+      <created>1582765668555</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582765668555</updated>
+      <workItem from="1582765669821" duration="1169000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

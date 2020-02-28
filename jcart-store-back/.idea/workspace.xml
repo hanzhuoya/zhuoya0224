@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="" />
+    <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -19,6 +28,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.cjf.jcartstoreback.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\resources" />
@@ -57,7 +69,8 @@
       <updated>1582765668555</updated>
       <workItem from="1582765669821" duration="1391000" />
       <workItem from="1582785730355" duration="8000" />
-      <workItem from="1582787699129" duration="485000" />
+      <workItem from="1582787699129" duration="1342000" />
+      <workItem from="1582855507990" duration="23000" />
     </task>
     <servers />
   </component>

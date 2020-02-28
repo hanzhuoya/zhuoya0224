@@ -1,6 +1,7 @@
 package io.hzy.jcartadministrationback.service;
 
 
+import com.github.pagehelper.Page;
 import io.hzy.jcartadministrationback.dto.in.ProductCreateInDTO;
 import io.hzy.jcartadministrationback.dto.in.ProductUpdateInDTO;
 import io.hzy.jcartadministrationback.dto.out.ProductListOutDTO;

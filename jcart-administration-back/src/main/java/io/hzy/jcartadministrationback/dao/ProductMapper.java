@@ -1,5 +1,7 @@
 package io.hzy.jcartadministrationback.dao;
 
+import com.github.pagehelper.Page;
+import io.hzy.jcartadministrationback.dto.out.ProductListOutDTO;
 import io.hzy.jcartadministrationback.po.Product;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
@@ -24,4 +26,5 @@ public interface ProductMapper {
 
     int batchDelete(@Param("productIds") List<Integer> productIds);
 
+    Page<ProductListOutDTO> search();
 }

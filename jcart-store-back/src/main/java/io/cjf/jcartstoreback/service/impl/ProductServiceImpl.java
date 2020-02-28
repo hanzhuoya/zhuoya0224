@@ -5,8 +5,6 @@ import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import io.cjf.jcartstoreback.dao.ProductDetailMapper;
 import io.cjf.jcartstoreback.dao.ProductMapper;
-import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
-import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
 import io.cjf.jcartstoreback.po.Product;
 import io.cjf.jcartstoreback.po.ProductDetail;
 import io.cjf.jcartstoreback.service.ProductService;

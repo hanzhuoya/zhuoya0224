@@ -25,18 +25,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.cjf.jcartstoreback.util" />
+      <recent name="io.cjf.jcartstoreback.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\controller" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\dto\out" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\dto\in" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\resources" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.cjf.jcartstoreback.util" />
-      <recent name="io.cjf.jcartstoreback.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -75,7 +76,7 @@
       <workItem from="1582787699129" duration="1342000" />
       <workItem from="1582855507990" duration="23000" />
       <workItem from="1582875819419" duration="2246000" />
-      <workItem from="1583115053657" duration="1309000" />
+      <workItem from="1583115053657" duration="1867000" />
     </task>
     <servers />
   </component>

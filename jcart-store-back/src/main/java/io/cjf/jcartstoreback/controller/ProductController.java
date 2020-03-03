@@ -1,5 +1,6 @@
 package io.cjf.jcartstoreback.controller;
 
+import com.github.pagehelper.Page;
 import io.cjf.jcartstoreback.dto.in.ProductSearchInDTO;
 import io.cjf.jcartstoreback.dto.out.PageOutDTO;
 import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
@@ -18,7 +19,14 @@ public class ProductController {
     @GetMapping("/search")
     public PageOutDTO<ProductListOutDTO> search(ProductSearchInDTO productSearchInDTO,
                                                 @RequestParam Integer pageNum){
-        return null;
+        Page<ProductListOutDTO> page = productService.search(pageNum);
+        PageOutDTO<ProductListOutDTO> pageOutDTO = new PageOutDTO<>();
+        pageOutDTO.setTotal(page.getTotal());
+        pageOutDTO.setPageSize(page.getPageSize());
+        pageOutDTO.setPageNum(page.getPageNum());
+        pageOutDTO.setList(page);
+
+        return pageOutDTO;
     }
 
     @GetMapping("/getById")

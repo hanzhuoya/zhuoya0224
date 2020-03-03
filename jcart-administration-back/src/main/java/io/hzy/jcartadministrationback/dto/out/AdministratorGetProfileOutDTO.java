@@ -64,4 +64,7 @@ public class AdministratorGetProfileOutDTO {
     public void setStatus(Byte status) {
         this.status = status;
     }
+
+    public void setAvatarUrl(String avatarUrl) {
+    }
 }

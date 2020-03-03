@@ -30,7 +30,7 @@ public class LoginFilter implements Filter {
     private Set<String> excludeLoginApiUrls;
 
     @Override
-    public <JWTVerificationException> void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public <JWTVerificationException extends Throwable> void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         HttpServletRequest request = (HttpServletRequest) servletRequest;
 

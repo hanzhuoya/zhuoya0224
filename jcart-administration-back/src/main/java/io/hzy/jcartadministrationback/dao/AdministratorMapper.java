@@ -1,7 +1,10 @@
 package io.hzy.jcartadministrationback.dao;
 
 
+import com.github.pagehelper.Page;
 import io.hzy.jcartadministrationback.po.Administrator;
+
+import java.util.List;
 
 public interface AdministratorMapper {
     int deleteByPrimaryKey(Integer administratorId);
@@ -15,4 +18,10 @@ public interface AdministratorMapper {
     int updateByPrimaryKeySelective(Administrator record);
 
     int updateByPrimaryKey(Administrator record);
+
+    Administrator selectByUsername(String username);
+
+    void batchDelete(List<Integer> administratorIds);
+
+    Page<Administrator> selectList();
 }

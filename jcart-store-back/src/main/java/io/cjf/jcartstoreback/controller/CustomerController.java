@@ -11,6 +11,9 @@ import io.cjf.jcartstoreback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.bind.DatatypeConverter;
+import java.security.SecureRandom;
+
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
@@ -20,6 +23,12 @@ public class CustomerController {
 
     @Autowired
     private JWTUtil jwtUtil;
+
+    @Autowired
+    private JavaMailSender mailSender;
+
+    @Autowired
+    private SecureRandom secureRandom;
 
     @PostMapping("/register")
     public Integer register(@RequestBody CustomerRegisterInDTO customerRegisterInDTO){
@@ -91,8 +100,20 @@ public class CustomerController {
     }
 
     @GetMapping("/getPwdResetCode")
-    public String getPwdResetCode(@RequestParam String email){
-       return null;
+    public String getPwdResetCode(@RequestParam String email) throws ClientException {
+        Customer customer = customerService.getByEmail(email);
+        if (customer == null){
+            throw new ClientException(ClientExceptionConstant.CUSTOMER_USERNAME_NOT_EXIST_ERRCODE, ClientExceptionConstant.CUSTOMER_USERNAME_NOT_EXIST_ERRMSG);
+        }
+        byte[] bytes = secureRandom.generateSeed(3);
+        String hex = DatatypeConverter.printHexBinary(bytes);
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom(fromEmail);
+        message.setTo(email);
+        message.setSubject("jcart重置密码");
+        message.setText(hex);
+        mailSender.send(message);
+        emailPwdResetCodeMap.put("PwdResetCode"+email, hex);
     }
 
     @PostMapping("/resetPwd")

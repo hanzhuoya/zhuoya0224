@@ -15,4 +15,4 @@ public class ClientExceptionConstant {
     public static final String ADNINISTRATOR_PASSWORD_INVALID_ERRCODE = "0102";
     public static final String ADNINISTRATOR_PASSWORD_INVALID_ERRMSG = "administrator password invalid";
 }
-}
+

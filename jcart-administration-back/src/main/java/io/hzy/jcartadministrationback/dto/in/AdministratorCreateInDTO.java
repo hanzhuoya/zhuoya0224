@@ -48,4 +48,7 @@ public class AdministratorCreateInDTO {
     public void setStatus(Byte status) {
         this.status = status;
     }
+
+    public String getPassword() {
+    }
 }

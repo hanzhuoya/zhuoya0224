@@ -49,5 +49,9 @@ public class AdministratorUpdateInDTO {
     private Byte ststus;
 
 
+    public String getAvatarUrl() {
+    }
 
+    public Byte getStatus() {
+    }
 }

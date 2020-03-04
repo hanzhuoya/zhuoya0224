@@ -1,8 +1,10 @@
 package io.hzy.jcartadministrationback.controller;
 
+import com.github.pagehelper.Page;
 import io.hzy.jcartadministrationback.constant.ClientExceptionConstant;
 import io.hzy.jcartadministrationback.dto.in.*;
 import io.hzy.jcartadministrationback.dto.out.*;
+import io.hzy.jcartadministrationback.enumeration.AdministratorStatus;
 import io.hzy.jcartadministrationback.exception.ClientException;
 import io.hzy.jcartadministrationback.po.Administrator;
 import io.hzy.jcartadministrationback.service.AdministratorService;
@@ -10,7 +12,9 @@ import io.hzy.jcartadministrationback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("administrator")
@@ -76,33 +80,83 @@ public class AdministratorController {
     }
 
     @GetMapping("/getList")
-    public PageOutDTO<AdministratorListOutDTO> getList(@RequestParam Integer pageNum){
-      return null;
+    public PageOutDTO<AdministratorListOutDTO> getList(@RequestParam Integer pageNum) {
+        Page<Administrator> page = administratorService.getList(pageNum);
+        List<AdministratorListOutDTO> administratorListOutDTOS = page.stream().map(administrator -> {
+            AdministratorListOutDTO administratorListOutDTO = new AdministratorListOutDTO();
+            administratorListOutDTO.setAdministratorId(administrator.getAdministratorId());
+            administratorListOutDTO.setUsername(administrator.getUsername());
+            administratorListOutDTO.setRealName(administrator.getRealName());
+            administratorListOutDTO.setStatus(administrator.getStatus());
+            administratorListOutDTO.setCreateTimestamp(administrator.getCreateTime().getTime());
+            return administratorListOutDTO;
+        }).collect(Collectors.toList());
+
+        PageOutDTO<AdministratorListOutDTO> pageOutDTO = new PageOutDTO<>();
+        pageOutDTO.setTotal((int) page.getTotal());
+        pageOutDTO.setPageSize(page.getPageSize());
+        pageOutDTO.setPageNum(page.getPageNum());
+        pageOutDTO.setList(administratorListOutDTOS);
+
+        return pageOutDTO;
     }
 
 
     @GetMapping("/getById")
-    public AdministratorShowOutDTO getById(@RequestParam Integer administratorId){
-        return null;
+    public AdministratorShowOutDTO getById(@RequestParam Integer administratorId) {
+        Administrator administrator = administratorService.getById(administratorId);
+
+        AdministratorShowOutDTO administratorShowOutDTO = new AdministratorShowOutDTO();
+        administratorShowOutDTO.setAdministratorId(administrator.getAdministratorId());
+        administratorShowOutDTO.setUsername(administrator.getUsername());
+        administratorShowOutDTO.setRealName(administrator.getRealName());
+        administratorShowOutDTO.setEmail(administrator.getEmail());
+        administratorShowOutDTO.setAvatarUrl(administrator.getAvatarUrl());
+        administratorShowOutDTO.setStatus(administrator.getStatus());
+        return administratorShowOutDTO;
     }
 
     @GetMapping("/create")
-    public Integer create(@RequestBody AdministratorCreateInDTO administratorCreateInDTO){
-     return null;
+    public Integer create(@RequestBody AdministratorCreateInDTO administratorCreateInDTO) {
+        Administrator administrator = new Administrator();
+        administrator.setUsername(administratorCreateInDTO.getUsername());
+        administrator.setRealName(administratorCreateInDTO.getRealName());
+        administrator.setEmail(administratorCreateInDTO.getEmail());
+        administrator.setAvatarUrl(administratorCreateInDTO.getAvatarUrl());
+        administrator.setStatus((byte) AdministratorStatus.Enable.ordinal());
+        administrator.setCreateTime(new Date());
+
+        String bcryptHashString = BCrypt.withDefaults().hashToString(12, administratorCreateInDTO.getPassword().toCharArray());
+        administrator.setEncryptedPassword(bcryptHashString);
+
+        Integer administratorId = administratorService.create(administrator);
+
+        return administratorId;
     }
 
     @PostMapping("/update")
     public void update(@RequestBody AdministratorUpdateInDTO administratorUpdateInDTO){
-
+        Administrator administrator = new Administrator();
+        administrator.setAdministratorId(administratorUpdateInDTO.getAdministratorId());
+        administrator.setRealName(administratorUpdateInDTO.getRealName());
+        administrator.setEmail(administratorUpdateInDTO.getEmail());
+        administrator.setAvatarUrl(administratorUpdateInDTO.getAvatarUrl());
+        administrator.setStatus(administratorUpdateInDTO.getStatus());
+        String password = administratorUpdateInDTO.getPassword();
+        if (password != null && !password.isEmpty()){
+            String bcryptHashString = BCrypt.withDefaults().hashToString(12, password.toCharArray());
+            administrator.setEncryptedPassword(bcryptHashString);
+        }
+        administratorService.update(administrator);
     }
 
     @PostMapping("/delete")
     public void delete(@RequestBody Integer adminstratorId){
-
+        administratorService.delete(adminstratorId);
     }
 
     @PostMapping("/batchDelete")
     public void batchDelete(List<Integer> administratorIds){
-
+        administratorService.batchDelete(administratorIds);
     }
 }

@@ -49,5 +49,6 @@ public class AdministratorShowOutDTO {
     private Byte status;
 
 
-
+    public void setRealName(String realName) {
+    }
 }

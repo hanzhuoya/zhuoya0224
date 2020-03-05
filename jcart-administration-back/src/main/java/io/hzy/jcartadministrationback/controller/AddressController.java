@@ -3,6 +3,8 @@ package io.hzy.jcartadministrationback.controller;
 import io.hzy.jcartadministrationback.dto.out.AddressListOutDTO;
 import io.hzy.jcartadministrationback.dto.out.AddressShowOutDTO;
 import io.hzy.jcartadministrationback.po.Address;
+import io.hzy.jcartadministrationback.service.AddressService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,8 +17,12 @@ import java.util.stream.Collectors;
 @RequestMapping("/address")
 public class AddressController {
 
+
+    @Autowired
+    private AddressService addressService;
+
     @GetMapping("/getListByCustomerId")
-    public List<AddressListOutDTO> getListByCusttomerId(){
+    public List<AddressListOutDTO> getListByCusttomerId((@RequestParam Integer customerId){
         List<Address> addresses = addressService.getByCustomerId(customerId);
         List<AddressListOutDTO> addressListOutDTOS = addresses.stream().map(address -> {
             AddressListOutDTO addressListOutDTO = new AddressListOutDTO();

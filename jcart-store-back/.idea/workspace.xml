@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="465df23f-0b80-490d-b3e4-cdfd2f7c6560" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/bean/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/OrderHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl/OrderHistoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/vo/OrderProductVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AddressMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/AddressMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dao/OrderMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/OrderCheckoutInDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/dto/in/OrderCheckoutInDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl/OrderServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,19 +31,19 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/service/impl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/io/cjf/jcartstoreback/vo" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="io.cjf.jcartstoreback.util" />
+      <recent name="io.cjf.jcartstoreback.service.impl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\vo" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\service\impl" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\service" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback" />
       <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\controller" />
-      <recent name="D:\hzy\zhuoya0224\jcart-store-back\src\main\java\io\cjf\jcartstoreback\dto\out" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="io.cjf.jcartstoreback.util" />
-      <recent name="io.cjf.jcartstoreback.service.impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -93,7 +90,8 @@
       <workItem from="1583129366074" duration="11000" />
       <workItem from="1583213703367" duration="2481000" />
       <workItem from="1583285851135" duration="91000" />
-      <workItem from="1583312938070" duration="1681000" />
+      <workItem from="1583312938070" duration="1833000" />
+      <workItem from="1583372972703" duration="581000" />
     </task>
     <servers />
   </component>

@@ -114,7 +114,7 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public OrderShowOutDTO getById(Long orderId) {
-        Order order = orderMapper.selectByPrimaryKey(orderId);
+        Order order = (Order) orderMapper.selectByPrimaryKey(orderId);
         OrderDetail orderDetail = orderDetailMapper.selectByPrimaryKey(orderId);
 
         OrderShowOutDTO orderShowOutDTO = new OrderShowOutDTO();

@@ -1,7 +1,7 @@
 package io.hzy.jcartadministrationback.filter;
 
-import io.cjf.jcartadministrationback.constant.ClientExceptionConstant;
-import io.cjf.jcartadministrationback.exception.ClientException;
+import io.hzy.jcartadministrationback.constant.ClientExceptionConstant;
+import io.hzy.jcartadministrationback.exception.ClientException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,7 +33,7 @@ public class StaticResourceFilter implements Filter {
         String ext = strings[strings.length - 1];
         ext = ext.toLowerCase();
         if (extensions.contains(ext)){
-            throw new ClientException(ClientExceptionConstant.NOT_SUPPORT_STATIC_RESOURCE_ERRCODE,ClientExceptionConstant.NOT_SUPPORT_STATIC_RESOURCE_ERRMSG);
+            throw new ClientException(ClientExceptionConstant.NOT_SUPPORT_STATIC_RESOURCE_ERRCODE, ClientExceptionConstant.NOT_SUPPORT_STATIC_RESOURCE_ERRMSG);
         }else {
             filterChain.doFilter(servletRequest, servletResponse);
             return;

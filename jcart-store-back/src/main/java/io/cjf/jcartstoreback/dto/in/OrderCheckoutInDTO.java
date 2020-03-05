@@ -75,4 +75,10 @@ public class OrderCheckoutInDTO {
     public void setOrderProducts(List<OrderProductInDTO> orderProducts) {
         this.orderProducts = orderProducts;
     }
+
+    public Integer getInvoiceAddressId() {
+    }
+
+    public Integer getShipAddressId() {
+    }
 }

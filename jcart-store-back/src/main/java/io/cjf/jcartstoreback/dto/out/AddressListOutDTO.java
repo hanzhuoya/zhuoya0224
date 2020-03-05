@@ -46,4 +46,7 @@ public class AddressListOutDTO {
     public void setTag(String tag) {
         this.tag = tag;
     }
+
+    public void setReceiverName(String receiverName) {
+    }
 }

@@ -48,6 +48,7 @@ public class LoginFilter implements Filter {
         }
 
         String token = request.getHeader("jcartToken");
+
 //        if (token == null || token.isEmpty()){
 //            token = request.getParameter("jcartToken");
 //        }

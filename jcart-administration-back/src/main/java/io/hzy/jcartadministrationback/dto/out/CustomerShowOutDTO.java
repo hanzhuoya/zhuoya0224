@@ -101,4 +101,7 @@ public class CustomerShowOutDTO {
     public void setDefaultAddressId(Integer defaultAddressId) {
         this.defaultAddressId = defaultAddressId;
     }
+
+    public void setDefaultAddress(String content) {
+    }
 }

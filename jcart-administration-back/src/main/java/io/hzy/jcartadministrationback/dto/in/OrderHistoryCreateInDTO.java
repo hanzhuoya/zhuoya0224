@@ -7,7 +7,7 @@ public class OrderHistoryCreateInDTO {
     private Boolean customerMotified;
 
 
-    public Long getOrderId() {
+    public Integer getOrderId() {
         return orderId;
     }
 
@@ -37,5 +37,11 @@ public class OrderHistoryCreateInDTO {
 
     public void setCustomerMotified(Boolean customerMotified) {
         this.customerMotified = customerMotified;
+    }
+
+    public String getComment() {
+    }
+
+    public Boolean getCustomerNotified() {
     }
 }

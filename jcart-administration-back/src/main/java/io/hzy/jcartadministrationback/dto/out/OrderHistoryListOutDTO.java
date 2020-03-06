@@ -46,4 +46,7 @@ public class OrderHistoryListOutDTO {
     public void setCustomerNotified(Boolean customerNotified) {
         this.customerNotified = customerNotified;
     }
+
+    public void setOrderHistoryId(Long orderHistoryId) {
+    }
 }

@@ -1,5 +1,6 @@
 package io.hzy.jcartadministrationback.dao;
 
+import com.github.pagehelper.Page;
 import io.hzy.jcartadministrationback.po.Return;
 
 public interface ReturnMapper {
@@ -14,4 +15,6 @@ public interface ReturnMapper {
     int updateByPrimaryKeySelective(Return record);
 
     int updateByPrimaryKey(Return record);
+
+    Page<Return> search();
 }

@@ -83,4 +83,7 @@ public class ReturnListOutDTO {
     public void setUpdateTimestamp(Long updateTimestamp) {
         this.updateTimestamp = updateTimestamp;
     }
+
+    public void setReturnId(Integer returnId) {
+    }
 }

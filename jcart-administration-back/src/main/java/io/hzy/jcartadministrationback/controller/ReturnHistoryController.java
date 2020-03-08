@@ -1,10 +1,15 @@
 package io.hzy.jcartadministrationback.controller;
 
 import io.hzy.jcartadministrationback.dto.in.ReturnHistoryCreateInDTO;
+import io.hzy.jcartadministrationback.dto.out.ReturnHistoryListOutDTO;
+import io.hzy.jcartadministrationback.po.ReturnHistory;
+import io.hzy.jcartadministrationback.service.ReturnHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/returnhistory")
@@ -14,7 +19,7 @@ public class ReturnHistoryController {
     private ReturnHistoryService returnHistoryService;
 
     @GetMapping("/getListByReturnId")
-    public List<ReturnHistoryController> getListByReturnId(@RequestParam Integer returnId){
+    public List<ReturnHistoryListOutDTO> getListByReturnId(@RequestParam Integer returnId){
 
         List<ReturnHistory> returnHistories = returnHistoryService.getListByReturnId(returnId);
 
@@ -32,7 +37,7 @@ public class ReturnHistoryController {
     }
 
     @PostMapping("/create")
-    public Integer create(@RequestBody ReturnHistoryCreateInDTO returnHistoryCreateInDTO){
+    public Long create(@RequestBody ReturnHistoryCreateInDTO returnHistoryCreateInDTO){
         ReturnHistory returnHistory = new ReturnHistory();
         returnHistory.setReturnId(returnHistoryCreateInDTO.getReturnId());
         returnHistory.setTime(new Date());

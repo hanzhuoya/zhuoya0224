@@ -1,7 +1,7 @@
 package io.hzy.jcartadministrationback.dto.out;
 
 public class ReturnListOutDTO {
-    private Integer rwturnId;
+    private Integer returnId;
     private Long orderId;
     private Integer customerId;
     private String customerName;
@@ -11,13 +11,12 @@ public class ReturnListOutDTO {
     private Long createTimestamp;
     private Long updateTimestamp;
 
-
-    public Integer getRwturnId() {
-        return rwturnId;
+    public Integer getReturnId() {
+        return returnId;
     }
 
-    public void setRwturnId(Integer rwturnId) {
-        this.rwturnId = rwturnId;
+    public void setReturnId(Integer returnId) {
+        this.returnId = returnId;
     }
 
     public Long getOrderId() {
@@ -82,8 +81,5 @@ public class ReturnListOutDTO {
 
     public void setUpdateTimestamp(Long updateTimestamp) {
         this.updateTimestamp = updateTimestamp;
-    }
-
-    public void setReturnId(Integer returnId) {
     }
 }

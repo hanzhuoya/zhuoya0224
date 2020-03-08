@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -54,11 +55,35 @@ public class ReturnController {
 
     @GetMapping("/getById")
     public ReturnShowOutDTO getById(@RequestParam Integer returnId) {
-       return null;
+        Return aReturn = returnService.getById(returnId);
+        ReturnShowOutDTO returnShowOutDTO = new ReturnShowOutDTO();
+        returnShowOutDTO.setReturnId(aReturn.getReturnId());
+        returnShowOutDTO.setOrderId(aReturn.getOrderId());
+        returnShowOutDTO.setOrderTimestamp(aReturn.getOrderTime().getTime());
+        returnShowOutDTO.setCustomerId(aReturn.getCustomerId());
+        returnShowOutDTO.setCustomerName(aReturn.getCustomerName());
+        returnShowOutDTO.setMobile(aReturn.getMobile());
+        returnShowOutDTO.setEmail(aReturn.getEmail());
+        returnShowOutDTO.setStatus(aReturn.getStatus());
+        returnShowOutDTO.setAction(aReturn.getAction());
+        returnShowOutDTO.setProductCode(aReturn.getProductCode());
+        returnShowOutDTO.setProductName(aReturn.getProductName());
+        returnShowOutDTO.setQuantity(aReturn.getQuantity());
+        returnShowOutDTO.setReason(aReturn.getReason());
+        returnShowOutDTO.setOpened(aReturn.getOpened());
+        returnShowOutDTO.setComment(aReturn.getComment());
+        returnShowOutDTO.setCreateTimestamp(aReturn.getCreateTime().getTime());
+        returnShowOutDTO.setUpdateTimestamp(aReturn.getUpdateTime().getTime());
+
+        return returnShowOutDTO;
     }
 
     @GetMapping("/updateAction")
     public void updateAction(@RequestParam ReturnUpdateActionInDTO returnUpdateActionInDTO){
-
+        Return aReturn = new Return();
+        aReturn.setReturnId(returnUpdateActionInDTO.getReturnId());
+        aReturn.setAction(returnUpdateActionInDTO.getAction());
+        aReturn.setUpdateTime(new Date());
+        returnService.update(aReturn);
     }
 }

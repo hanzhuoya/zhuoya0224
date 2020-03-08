@@ -1,8 +1,5 @@
 package io.hzy.jcartadministrationback.dto.out;
 
-import com.sun.javafx.image.impl.ByteRgb;
-import org.omg.CORBA.PRIVATE_MEMBER;
-
 public class ReturnShowOutDTO {
     private Integer returnId;
     private Long orderId;
@@ -156,5 +153,8 @@ public class ReturnShowOutDTO {
 
     public void setUpdateTimestamp(Long updateTimestamp) {
         this.updateTimestamp = updateTimestamp;
+    }
+
+    public void setOpened(Boolean opened) {
     }
 }

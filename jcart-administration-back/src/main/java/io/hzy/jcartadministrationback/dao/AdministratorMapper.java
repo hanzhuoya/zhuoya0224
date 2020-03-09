@@ -3,6 +3,7 @@ package io.hzy.jcartadministrationback.dao;
 
 import com.github.pagehelper.Page;
 import io.hzy.jcartadministrationback.po.Administrator;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -19,9 +20,13 @@ public interface AdministratorMapper {
 
     int updateByPrimaryKey(Administrator record);
 
-    Administrator selectByUsername(String username);
 
-    void batchDelete(List<Integer> administratorIds);
+
+    Administrator selectByUsername(@Param("username") String username);
+
+    Administrator selectByEmail(@Param("email") String email);
+
+    int batchDelete(@Param("administratorIds") List<Integer> administratorIds);
 
     Page<Administrator> selectList();
 }

@@ -1,6 +1,7 @@
 package io.hzy.jcartadministrationback.dao;
 
 import io.hzy.jcartadministrationback.po.Address;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -17,5 +18,5 @@ public interface AddressMapper {
 
     int updateByPrimaryKey(Address record);
 
-    List<Address> selectByCustomerId(Integer customerId);
+    List<Address> selectByCustomerId(@Param("customerId") Integer customerId);
 }

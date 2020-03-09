@@ -1,6 +1,6 @@
 package io.hzy.jcartadministrationback.dao;
 
-import io.cjf.jcartadministrationback.po.OrderDetail;
+import io.hzy.jcartadministrationback.po.OrderDetail;
 
 public interface OrderDetailMapper {
     int deleteByPrimaryKey(Long orderId);

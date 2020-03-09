@@ -3,9 +3,7 @@ package io.cjf.jcartstoreback.service.impl;
 import at.favre.lib.crypto.bcrypt.BCrypt;
 import io.cjf.jcartstoreback.CustomerStatus;
 import io.cjf.jcartstoreback.dao.CustomerMapper;
-import io.cjf.jcartstoreback.dto.in.CustomerRegisterInDTO;
 import io.cjf.jcartstoreback.po.Customer;
-import io.cjf.jcartstoreback.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

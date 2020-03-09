@@ -6,7 +6,6 @@ import io.cjf.jcartstoreback.dto.out.CustomerGetProfileOutDTO;
 import io.cjf.jcartstoreback.dto.out.CustomerLoginOutDTO;
 import io.cjf.jcartstoreback.exception.ClientException;
 import io.cjf.jcartstoreback.po.Customer;
-import io.cjf.jcartstoreback.service.CustomerService;
 import io.cjf.jcartstoreback.util.JWTUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -122,7 +121,7 @@ public class CustomerController {
         if (email == null) {
             throw new ClientException(ClientExceptionConstant.CUSTOMER_PWDRESET_EMAIL_NONE_ERRCODE, ClientExceptionConstant.CUSTOMER_PWDRESET_EMAIL_NONE_ERRMSG);
         }
-        =
+
         String innerResetCode = emailPwdResetCodeMap.get(email);
         if (innerResetCode == null) {
             throw new ClientException(ClientExceptionConstant.CUSTOMER_PWDRESET_INNER_RESETCODE_NONE_ERRCODE, ClientExceptionConstant.CUSTOMER_PWDRESET_INNER_RESETCODE_NONE_ERRMSG);
@@ -146,5 +145,6 @@ public class CustomerController {
         String bcryptHashString = BCrypt.withDefaults().hashToString(12, newPwd.toCharArray());
         customer.setEncryptedPassword(bcryptHashString);
         customerService.update(customer);
+
     }
 }

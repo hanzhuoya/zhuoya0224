@@ -1,7 +1,6 @@
 package io.cjf.jcartstoreback.dto.in;
 
 public class CustomerResetPwdInDTO {
-
     private String email;
     private String resetCode;
     private String newPwd;

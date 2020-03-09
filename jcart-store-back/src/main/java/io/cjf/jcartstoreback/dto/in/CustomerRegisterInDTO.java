@@ -1,7 +1,5 @@
 package io.cjf.jcartstoreback.dto.in;
 
-import sun.dc.pr.PRError;
-
 public class CustomerRegisterInDTO {
     private String username;
     private String realName;

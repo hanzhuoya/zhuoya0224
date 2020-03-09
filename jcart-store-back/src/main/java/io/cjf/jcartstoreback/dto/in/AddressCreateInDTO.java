@@ -1,20 +1,10 @@
 package io.cjf.jcartstoreback.dto.in;
 
 public class AddressCreateInDTO {
-    private Integer customerId;
     private String receiverName;
     private String receiverMobile;
     private String content;
     private String tag;
-
-
-    public Integer getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(Integer customerId) {
-        this.customerId = customerId;
-    }
 
     public String getReceiverName() {
         return receiverName;

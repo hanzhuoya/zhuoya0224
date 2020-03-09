@@ -1,14 +1,25 @@
 package io.cjf.jcartstoreback.service;
 
-
 import com.github.pagehelper.Page;
+
 import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
 import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
 
+import java.util.List;
+
 public interface ProductService {
 
-    ProductShowOutDTO getById(Integer productId);
+    Integer create(ProductCreateInDTO productCreateInDTO);
 
-    Page<ProductListOutDTO> search(Integer pageNum);
+    void update(ProductUpdateInDTO productUpdateInDTO);
+
+    void delete(Integer productId);
+
+    void batchDelete(List<Integer> productIds);
+
+    Page<ProductListOutDTO> search(ProductSearchInDTO productSearchInDTO,
+                                   Integer pageNum);
+
+    ProductShowOutDTO getById(Integer productId);
 
 }

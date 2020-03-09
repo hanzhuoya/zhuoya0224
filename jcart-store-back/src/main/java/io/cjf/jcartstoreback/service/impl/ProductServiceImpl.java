@@ -9,7 +9,6 @@ import io.cjf.jcartstoreback.dto.out.ProductListOutDTO;
 import io.cjf.jcartstoreback.dto.out.ProductShowOutDTO;
 import io.cjf.jcartstoreback.po.Product;
 import io.cjf.jcartstoreback.po.ProductDetail;
-import io.cjf.jcartstoreback.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

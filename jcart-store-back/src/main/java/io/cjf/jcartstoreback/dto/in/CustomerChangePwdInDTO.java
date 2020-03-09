@@ -4,7 +4,6 @@ public class CustomerChangePwdInDTO {
     private String originPwd;
     private String newPwd;
 
-
     public String getOriginPwd() {
         return originPwd;
     }

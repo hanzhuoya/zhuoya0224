@@ -5,7 +5,6 @@ public class CustomerUpdateProfileInDTO {
     private String mobile;
     private String email;
 
-
     public String getRealName() {
         return realName;
     }

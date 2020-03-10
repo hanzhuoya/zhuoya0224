@@ -28,6 +28,9 @@ public class AdministratorController {
      @Autowired
     private JWTUtil jwtUtil;
 
+    @Autowired
+    private JavaMailSender mailSender;
+
     @GetMapping("/login")
 
     public AdministratorLoginOutDTO login(AdministratorLoginInDTO administratorLoginInDTO) throws ClientException {

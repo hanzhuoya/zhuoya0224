@@ -150,17 +150,14 @@ public class AdministratorController {
 
 
     @GetMapping("/getById")
-    public AdministratorShowOutDTO getById(@RequestParam Integer administratorId) {
+    public AdministratorShowOutDTO getById(@RequestParam AdministratorCreateInDTO administratorCreateInDTO) {
         Administrator administrator = administratorService.getById(administratorId);
-
-        AdministratorShowOutDTO administratorShowOutDTO = new AdministratorShowOutDTO();
-        administratorShowOutDTO.setAdministratorId(administrator.getAdministratorId());
-        administratorShowOutDTO.setUsername(administrator.getUsername());
-        administratorShowOutDTO.setRealName(administrator.getRealName());
-        administratorShowOutDTO.setEmail(administrator.getEmail());
-        administratorShowOutDTO.setAvatarUrl(administrator.getAvatarUrl());
-        administratorShowOutDTO.setStatus(administrator.getStatus());
-        return administratorShowOutDTO;
+        administrator.setAdministratorId(administrator.getAdministratorId());
+        administrator.setUsername(administratorCreateInDTO.getUsername());
+        administrator.setRealName(administratorCreateInDTO.getRealName());
+        administrator.setEmail(administratorCreateInDTO.getEmail());
+        administrator.setAvatarUrl(administratorCreateInDTO.getAvatarUrl());
+        administrator.setStatus(administratorCreateInDTO.getStatus());
     }
 
     @GetMapping("/create")

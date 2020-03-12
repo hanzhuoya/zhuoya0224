@@ -2,6 +2,7 @@ package io.hzy.jcartadministrationback.controller;
 
 import io.hzy.jcartadministrationback.constant.ClientExceptionConstant;
 import io.hzy.jcartadministrationback.exception.ClientException;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -16,14 +17,15 @@ import java.util.UUID;
 @CrossOrigin
 public class ImageController {
 
+    @Value("${www.image.baseurl}")
+    private String imageBaseurl;
 
     private List<String> imageExts= Arrays.asList("jpg","jpeg","png");
 
     @PostMapping("/upload")
-    public String upload(@RequestParam MultipartFile image) throws ClientException {
+    public String upload(@RequestParam MultipartFile image) throws IOException, ClientException {
         String originalFilename = image.getOriginalFilename();
         String[] splits = originalFilename.split("\\.");
-
         String ext = splits[splits.length - 1];
         ext = ext.toLowerCase();
         //todo judge with content type
@@ -37,10 +39,8 @@ public class ImageController {
         try(FileOutputStream out = new FileOutputStream(filepath)){
             byte[] data = image.getBytes();
             out.write(data);
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-        return filename;
+        return imageBaseurl + "/" + filename;
     }
 
 }
